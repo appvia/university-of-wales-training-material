@@ -4,7 +4,7 @@
 
 In this exercise you will be creating your own Github repository which you will be using throughout the training.
 
-Navigate to [https://github.com/bank-of-england-technology](https://github.com/bank-of-england-technology)
+Navigate to [https://github.com](https://github.com)
 
 Click on the "New" button
 
@@ -18,14 +18,14 @@ Select "Add a README file" -> this file allows you to add description about your
 
 <img src="images/create.png" width="500" height="500">
 
-At this point you have your own blank repository with a README file. This repository exists in github.com, it is now time to clone this repository to your machine. If you closed your repository windown you can find your repository by heading over to [Bank of England Technology github](https://github.com/bank-of-england-technology). Use the `Find a repository...` search box to look for your repo. 
+At this point you have your own blank repository with a README file. This repository exists in github.com, it is now time to clone this repository to your machine. If you closed your repository windown you can find your repository by heading over to [Github](https://github.com). Use the `Find a repository...` search box to look for your repo. 
 
 Once located, click on the `Code` button and select the `HTTPS` tab, copy the URL and open a terminal, you can use command prompt/powershell/git bash. All insctructions you see in the demo are using `Git bash`. Navigate to `github` directory in your `C` drive and clone the repo using YOUR repository's HTTPS URL. If you do not have a `github` directory, please create one in your `C` drive.
 
 `cd /c/github` 
 
 Now you can use `git clone` to clone your repository, e.g.
-`git clone https://github.com/bank-of-england-technology/training-firstname-lastname.git` 
+`git clone https://github.com/{your-username}/training-firstname-lastname.git` (replace your-username and firstname-lastname)
 
 This will clone your repo onto your machine. You can now navigate into the repository by running:
 

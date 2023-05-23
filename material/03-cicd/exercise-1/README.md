@@ -1,6 +1,6 @@
 # GitHub Actions
 
-We will be using GitHub Actions to push images to a Docker Container Registry. For this exercise we will be pushing the Docker image that you create locally into the Docker Hub Container Registry that you created in Docker exercises. For Azure you will be using a similar setup. If you have not completed Docker `exercise-01` please complete [this](https://github.com/bank-of-england-technology/developer-training/tree/main/material/02-docker/exercise-1#container-registry) before doing this exercise. 
+We will be using GitHub Actions to push images to a Docker Container Registry. For this exercise we will be pushing the Docker image that you create locally into the Docker Hub Container Registry that you created in Docker exercises. For Azure you will be using a similar setup. If you have not completed Docker `exercise-01` please complete [this](https://github.com/appvia/training-material/tree/main/material/02-docker/exercise-1#container-registry)) before doing this exercise. 
 
 Open the training repository that you created at the begining of your workshop in Visual Studio. You should have the following files
 
