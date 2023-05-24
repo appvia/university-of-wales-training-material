@@ -1,6 +1,7 @@
 # Deploying Application to Azure
 
 
+## Deploying via Azure Portal
 Containerisation has revolutionised the way we develop, package, and deploy applications. With the rise of microservices architecture and the need for efficient resource utilization, deploying containers has become a fundamental aspect of modern application development. Azure Container Instances (ACI), as part of the Azure ecosystem, offers a robust and flexible solution to deploy and manage your containers seamlessly.
 
 
@@ -43,3 +44,15 @@ Containerisation has revolutionised the way we develop, package, and deploy appl
 9. It will take a few minutes for container instance to deploy. Once the container instance is created, click on `Go to resource` to see the details of the container instance.
 
 ![container instance](./images/containerinstance.png)
+
+10.  On the `Overview` tab, you will see the details of the container instance. Copy the `Public IP address`.
+
+![details](./images/details.png)
+
+11.   Open browser and paste the IP address with the Port 8080 e.g. `20.254.9.87:8080` . You will see the running container.
+
+![running](./images/hello.png)
+
+Congratulations, you have just deployed your first container instance on Azure!
+
+## Deploying via CI/CD pipeline
