@@ -1,6 +1,6 @@
 # GitHub Actions
 
-We will be using GitHub Actions to push images to a Docker Container Registry. For this exercise we will be pushing the Docker image that you create locally into the Docker Hub Container Registry that you created in Docker exercises. For Azure you will be using a similar setup. If you have not completed Docker `exercise-01` please complete [this](https://github.com/appvia/training-material/tree/main/material/02-docker/exercise-1#container-registry)) before doing this exercise. 
+We will be using GitHub Actions to push images to a Docker Container Registry. For this exercise we will be pushing the Docker image that you create locally into the Docker Hub Container Registry that you created in Docker exercises. If you have not completed Docker `exercise-01` please complete [this](https://github.com/appvia/training-material/tree/main/material/02-docker/exercise-1#container-registry)) before doing this exercise. 
 
 Open the training repository that you created at the begining of your workshop in Visual Studio. You should have the following files
 
@@ -81,7 +81,7 @@ If you see your `build-image.yaml` file, you will notice this section:
           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
 ```
 
-This is using a pre-built action called `docker/login-action@v1` that allows the peipline to login to DockerHub using the secrets you just provided. We can use the same action to login to any container registry including Azure Container Registry, have a look at [this](https://github.com/marketplace/actions/azure-container-registry-login) to see how you can allow Github Actions to login to ACR. There are many actions available, for more details you can see the documentation [here](https://docs.github.com/en/actions).
+This is using a pre-built action called `docker/login-action@v1` that allows the peipline to login to DockerHub using the secrets you just provided. There are many actions available, for more details you can see the documentation [here](https://docs.github.com/en/actions).
 
 The job that builds and pushes the image is:
 
