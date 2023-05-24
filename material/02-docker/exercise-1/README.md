@@ -164,6 +164,3 @@ Once pushed, head over to your repository in Docker Hub to confirm that an image
 <img src="../images/image.png">
 
 `Extra challenge`: Can you delete the `your-user-name/web-app` image locally and pull it from your Docker Hub container registry?
-
-In Azure dev environment you will be using a similar process for pushing containers to the Azure Container Registry. The only diference being that you will login to azure conatiner registry using `docker login my-registry-name.azureacr.io`. From that point onwards, you will use the same process as above to tag and push images. Have a look at [ACR documentation](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-docker-cli?tabs=azure-cli) for details.
-
