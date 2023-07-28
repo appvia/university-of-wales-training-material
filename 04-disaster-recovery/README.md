@@ -5,7 +5,7 @@ Copy  the Azure Resource Manager (ARM) template from the link. This  defines all
 
 
 ## Step 2: Deploy the Custom Template
-* Navigate to the "Custom deployment" option from the left-hand navigation pane in the Azure Portal.
+* Navigate to the "Deploy a custom template" option or from the left-hand navigation pane in the Azure Portal.
 * Click on "Build your own template in the editor" or "Load file" to upload the custom ARM template you created in Step 1.
 * Click on "Save" to save the template configuration.
 
