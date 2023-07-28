@@ -11,7 +11,7 @@ Copy  the Azure Resource Manager (ARM) template from the link. This  defines all
 
 ## Step 3: Fill in the deployment details:
 * Subscription: Choose the Azure subscription where the custom resources will be deployed.
-* Resource group: Select the Primary resource group  created in exercise one (step 2) 
+* Resource group: select "Create new". Please name your resource group as "primary"  
 * Region: Choose the Azure region where the resources will be deployed.
 * Template parameters: Enter values for any parameters defined in your custom ARM template.
 
