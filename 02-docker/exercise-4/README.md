@@ -1,8 +1,4 @@
----
-runme:
-  id: 01HSZJV96NQ5RGKNWPMRGX7ZCF
-  version: v3
----
+
 
 # Windows Containers
 
@@ -33,7 +29,7 @@ If you access localhost:8082 you will see the default IIS web page.
 
 If you would like to create your own ASP.NET app, you can use following `Dockerfile`
 
-```Dockerfile {"id":"01HSZJV96K0G98JN6J34YKDPFF"}
+```
 FROM microsoft/iis
 
 RUN ["powershell.exe", "Install-WindowsFeature NET-Framework-45-ASPNET"]  
