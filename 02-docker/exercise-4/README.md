@@ -1,23 +1,29 @@
+---
+runme:
+  id: 01HSZJV96NQ5RGKNWPMRGX7ZCF
+  version: v3
+---
+
 # Windows Containers
 
-Follow the guide [here](https://docs.docker.com/docker-for-windows/) to enable Windows containers on Docker Desktop.
+Follow the guide [here](https://learn.microsoft.com/en-us/virtualization/windowscontainers/quick-start/run-your-first-container#run-a-windows-container) to enable Windows containers on Docker Desktop.
 
 ### .NET Framework
 
-Have a look at [this](https://github.com/microsoft/dotnet-framework-docker-samples) tutorial for ASP .NET and .NET Framework containers.
+Have a look at [this](https://github.com/Microsoft/dotnet-framework-docker) tutorial for ASP .NET and .NET Framework containers.
 
 ### Nano Server
 
-`docker pull microsoft/nanoserver`
+`docker pull mcr.microsoft.com/windows/nanoserver:ltsc2022
+`
 
-`docker run -it microsoft/nanoserver powershell`
+`docker run -it mcr.microsoft.com/windows/nanoserver:ltsc2022`
 
 This will allow you to run powershell in `nanoserver`. Have a look [here](https://hub.docker.com/_/microsoft-windows-nanoserver) for more information.
 
-
 ### IIS
 
-[microsoft/iis](https://hub.docker.com/_/microsoft-windows-servercore-iis) image is based on Windows Server Core and is around 4GB when downloading (sad face). 
+[microsoft/iis](https://hub.docker.com/_/microsoft-windows-servercore-iis) image is based on Windows Server Core and is around 4GB when downloading (sad face).
 
 In order to run default IIS page you can run the following command:
 
@@ -27,7 +33,7 @@ If you access localhost:8082 you will see the default IIS web page.
 
 If you would like to create your own ASP.NET app, you can use following `Dockerfile`
 
-```Dockerfile
+```Dockerfile {"id":"01HSZJV96K0G98JN6J34YKDPFF"}
 FROM microsoft/iis
 
 RUN ["powershell.exe", "Install-WindowsFeature NET-Framework-45-ASPNET"]  
