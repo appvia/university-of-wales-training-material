@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: broken-app
+  labels:
+    app: broken-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: broken-app
+  template:
+    metadata:
+      labels:
+        app: broken-app
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:non-existent-tag  # This image doesn't exist
+        ports:
+        - containerPort: 80
+        env:
+        - name: REQUIRED_VAR
+          valueFrom:
+            configMapKeyRef:
+              name: non-existent-config  # This ConfigMap doesn't exist
+              key: SOME_KEY 
