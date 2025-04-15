@@ -5,7 +5,7 @@
 - **kubectl CLI tool** installed and configured
 - **wayfinder cli** (for authentication into the cluster) - [Installation Guide](https://docs.appvia.io/wayfinder/cli)
 
-### ⚠️ Version Requirement
+### ⚠️ Version Requirement- In the doc it will give you VERSION=latest  make sure you change to VERSION=v2.9.7
 
 ```bash
 # ✅ CORRECT: Use this version
