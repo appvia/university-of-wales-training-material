@@ -16,9 +16,12 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:latest  # Fixed image tag
+        image: nginx:non-existent-tag  
         ports:
         - containerPort: 80
         env:
         - name: REQUIRED_VAR
-          value: "default-value"  # Fixed environment variable 
+          valueFrom:
+            configMapKeyRef:
+              name: non-existent-config
+              key: SOME_KEY 
