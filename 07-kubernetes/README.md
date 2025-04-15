@@ -39,5 +39,5 @@ After installing the wayfinder cli, open a terminal and run the following comman
 
 ```bash
 wf login -a https://api.wfdemo.appvia.io
-wf access env test <your-name>
+wf access env test <your-name> --role namespace.edit
 ```
