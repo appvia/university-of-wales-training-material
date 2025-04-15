@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: config-app
+  labels:
+    app: config-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: config-app
+  template:
+    metadata:
+      labels:
+        app: config-app
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+        # Inject environment variables from ConfigMap
+        env:
+        - name: APP_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: app-config
+              key: APP_NAME
+        - name: ENVIRONMENT
+          valueFrom:
+            configMapKeyRef:
+              name: app-config
+              key: ENVIRONMENT
+        # Mount ConfigMap as a volume
+        volumeMounts:
+        - name: config-volume
+          mountPath: /etc/app/config
+      volumes:
+      - name: config-volume
+        configMap:
+          name: app-config 
