@@ -124,7 +124,9 @@ kubectl exec <pod-name> -- cat /etc/app/config/config.json
 ```
 
 ### 6. Update the ConfigMap
-Edit the ConfigMap:
+Edit the ConfigMap: 
+change the port to 5433
+
 ```bash
 kubectl edit configmap app-config
 ```
