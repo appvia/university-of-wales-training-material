@@ -3,7 +3,13 @@
 ## Prerequisites
 
 - kubectl CLI tool installed and configured
-- wayfinder cli (for authentication into the cluster) - [Installation Guide](https://docs.appvia.io/wayfinder/cli)
+- wayfinder cli (for authentication into the cluster) 
+
+```bash
+curl -fsSLo ./wf.tgz https://storage.googleapis.com/wayfinder-releases/v2.9.7/wf-cli-darwin-amd64.tar.gz && tar -xzf ./wf.tgz -C . && rm ./wf.tgz
+sudo mv ./wf-cli-darwin-amd64 /usr/local/bin/wf
+```
+
 - Basic understanding of YAML syntax
 - Completed previous labs in sequence (each lab builds upon the previous ones)
 
