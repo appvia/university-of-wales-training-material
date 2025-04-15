@@ -64,6 +64,8 @@ kubectl get pods
 
 You should now see 3 pods running with names like `nginx-deployment-xxxxx-yyyy`.
 
+> 🚀 **BONUS CHALLENGE!** The next step won't work - can you figure out why? Put your troubleshooting skills to the test before we reveal the answer! 💡
+
 ### 5. Test Load Balancing
 Create a service to expose the deployment:
 ```bash

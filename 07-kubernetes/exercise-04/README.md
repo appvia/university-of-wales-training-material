@@ -75,42 +75,19 @@ kubectl logs <pod-name>
 ```
 
 ### 4. Fix the Deployment
-Create a corrected version in `fixed-deployment.yaml`:
+Once you've identified the issues, create a new file called `fixed-deployment.yaml` with your corrections. Consider:
+- Validating the image tag exists
+- Checking ConfigMap references
+- Verifying environment variable configurations
+- Ensuring all required resources are available
 
-```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: broken-app
-  labels:
-    app: broken-app
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: broken-app
-  template:
-    metadata:
-      labels:
-        app: broken-app
-    spec:
-      containers:
-      - name: nginx
-        image: nginx:latest  # Fixed image tag
-        ports:
-        - containerPort: 80
-        env:
-        - name: REQUIRED_VAR
-          value: "default-value"  # Fixed environment variable
-```
-
-### 5. Apply the Fix
-Apply the corrected deployment:
+### 5. Apply Your Fix
+Apply your corrected deployment:
 ```bash
 kubectl apply -f fixed-deployment.yaml
 ```
 
-### 6. Verify the Fix
+### 6. Verify Your Fix
 Check that the deployment is now working:
 ```bash
 kubectl get deployments
