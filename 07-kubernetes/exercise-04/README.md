@@ -64,6 +64,11 @@ Describe the deployment for detailed information:
 kubectl describe deployment broken-app
 ```
 
+Describe the deployment for detailed information:
+```bash
+kubectl describe pods <pod-name>
+```
+
 Check pod events:
 ```bash
 kubectl get events --sort-by='.lastTimestamp'
