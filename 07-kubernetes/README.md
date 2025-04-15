@@ -2,7 +2,7 @@
 
 ## 📋 Prerequisites
 
-- **kubectl CLI tool** installed and configured
+- **kubectl CLI tool** installed and configured - [Installation Guide](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 - **wayfinder cli** (for authentication into the cluster) - [Installation Guide](https://docs.appvia.io/wayfinder/cli)
 
 ### ⚠️ Version Requirement- In the doc it will give you VERSION=latest  make sure you change to VERSION=v2.9.7
