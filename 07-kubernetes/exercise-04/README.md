@@ -33,14 +33,14 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:non-existent-tag  # This image doesn't exist
+        image: nginx:non-existent-tag 
         ports:
         - containerPort: 80
         env:
         - name: REQUIRED_VAR
           valueFrom:
             configMapKeyRef:
-              name: non-existent-config  # This ConfigMap doesn't exist
+              name: non-existent-config  
               key: SOME_KEY
 ```
 
